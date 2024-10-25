@@ -23,21 +23,22 @@ const Portfolio = () => {
   };
 
   return (
-    <div id="portfolio" className="w-full px-6 py-10 text-center bg-gray-200">
+    <div id="portfolio" className="w-full px-4 md:px-6 py-10 text-center bg-gray-200">
       <h2 className="text-2xl font-semibold text-gray-800">My Portfolio</h2>
       <p className="mt-4 text-gray-600">
         Here are some of my projects showcasing my skills in front-end development.
       </p>
       <div className="showcasingProjects flex flex-col gap-5">
         
-        <div className="first flex items-center">
+        {/* Rolling Dice Project */}
+        <div className="flex flex-col md:flex-row items-center">
           <img
             src="./rollinglogo.png"
             alt="Rolling Dice"
-            className="rounded-3xl w-[350px] hover:scale-90 duration-150 cursor-pointer"
+            className="rounded-3xl w-full md:w-[350px] hover:scale-90 duration-150 cursor-pointer"
             onClick={handleRollingDiceClick}
           />
-          <p className="ml-10 text-3xl font-bold">Rolling Dice</p>
+          <p className="mt-4 md:mt-0 md:ml-10 text-2xl md:text-3xl font-bold">Rolling Dice</p>
         </div>
         {showRollingDice && (
           <div className={`mt-4 transition-opacity duration-500 ${showRollingDice ? 'opacity-100' : 'opacity-0'}`}>
@@ -46,14 +47,16 @@ const Portfolio = () => {
             </p>
           </div>
         )}
-        <div className="first flex items-center">
+        
+        {/* Currency Converter Project */}
+        <div className="flex flex-col md:flex-row items-center">
           <img
             src="./currencylogo.png"
             alt="Currency Converter"
-            className="rounded-3xl w-[350px] hover:scale-90 duration-150 cursor-pointer"
+            className="rounded-3xl w-full md:w-[350px] hover:scale-90 duration-150 cursor-pointer"
             onClick={handleCurrencyConverterClick}
           />
-          <p className="ml-10 text-3xl font-bold">Currency Converter</p>
+          <p className="mt-4 md:mt-0 md:ml-10 text-2xl md:text-3xl font-bold">Currency Converter</p>
         </div>
         {showCurrencyConverter && (
           <div className={`mt-4 transition-opacity duration-500 ${showCurrencyConverter ? 'opacity-100' : 'opacity-0'}`}>
@@ -62,14 +65,16 @@ const Portfolio = () => {
             </p>
           </div>
         )}
-        <div className="second flex items-center">
+
+        {/* Love Calculator Project */}
+        <div className="flex flex-col md:flex-row items-center">
           <img
             src="./lovelogo.png"
             alt="Love Calculator"
-            className="rounded-3xl w-[350px] hover:scale-90 duration-150 cursor-pointer"
+            className="rounded-3xl w-full md:w-[350px] hover:scale-90 duration-150 cursor-pointer"
             onClick={handleLoveCalcClick}
           />
-          <p className="ml-10 text-3xl font-bold">Love Calculator</p>
+          <p className="mt-4 md:mt-0 md:ml-10 text-2xl md:text-3xl font-bold">Love Calculator</p>
         </div>
         {showLoveCalculator && (
           <div className={`mt-4 transition-opacity duration-500 ${showLoveCalculator ? 'opacity-100' : 'opacity-0'}`}>
@@ -78,14 +83,16 @@ const Portfolio = () => {
             </p>
           </div>
         )}
-        <div className="first flex items-center">
+
+        {/* Health-Care Services Project */}
+        <div className="flex flex-col md:flex-row items-center">
           <img
             src="./healthcare.png"
             alt="Health-Care Services"
-            className="rounded-3xl w-[350px] hover:scale-90 duration-150 cursor-pointer"
+            className="rounded-3xl w-full md:w-[350px] hover:scale-90 duration-150 cursor-pointer"
             onClick={handleHealthcareClick}
           />
-          <p className="ml-10 text-3xl font-bold">Health-Care Services</p>
+          <p className="mt-4 md:mt-0 md:ml-10 text-2xl md:text-3xl font-bold">Health-Care Services</p>
         </div>
         {showHealthcareServices && (
           <div className={`mt-4 transition-opacity duration-500 ${showHealthcareServices ? 'opacity-100' : 'opacity-0'}`}>
